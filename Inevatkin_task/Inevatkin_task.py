@@ -18,8 +18,6 @@ def task_1():
     p3 = (patients_from_onefive / (patients_from_onefive + patients_from_six)) * ((patients_from_onefive - 1) / (patients_from_onefive + patients_from_six - 1)) * ((patients_from_onefive - 2) / (patients_from_onefive + patients_from_six - 2))
     answer += f"б) {p3}\n"
     return text, answer
-from math import comb
-from random import randint
 
 def task_2():
     juice_sm = randint (5, 15)
@@ -160,6 +158,7 @@ def task_10():
                    f"Какова вероятность того, что это событие наступит " \
                    f"а) в большинстве из {n} опытов;\n" \
                    f"б) в половине опытов из {n}?\n"
+    answer = "10. \n"
 
     x = (k - n * p) / (n * p* (1 - p))
     y = (k + skail - n * p) / (n * p * (1 - p))
